@@ -1,2 +1,17 @@
-# Pet-Stat-Level-Up-Calculator-ITRTG
-Calculator for how much stat points your pet will have at a certain level based on its current growth only so far.
+//Current pet level goes first, wanted pet level calculations go next, you edit these 2 numbers.
+var levels = [1, 10];
+//these are the current growth stats of your pet, you edit this, first number is Physical, next is Mystic and the last one is Battle.
+var bg = [15, 10.25, 10.25];
+//Total growth points (Base)
+var btg = (bg[0]+bg[1] +bg[2]);
+//Level difference calculation
+var ld = (levels[1]-levels[0]);
+//Growth points, Physical, Mystical, Battle (Estimate)
+var gp = [bg[0]+(levels[1]-1)*0.1*bg[0],bg[1]+(levels[1]-1)*0.1*bg[1],bg[2]+(levels[1]-1)*0.1*bg[2]];
+//Total growth points (Estimate)
+var tgp = (gp[0]+gp[1]+gp[2]);
+//Growth points difference calculation
+var gpd = (tgp-btg)
+//This is just how it shows up when you run the script,
+console.log("Your pets physical stats will be "+gp[0]+", it's Mystical stats will be "+gp[1]+", it's Battle stats will be "+gp[2]+" and it's total growth will be "+tgp+" in "+ld+" levels. That's a total growth of "+gpd+"!");
+alert("Your pets physical stats will be "+gp[0]+", it's Mystical stats will be "+gp[1]+", it's Battle stats will be "+gp[2]+" and it's total growth will be "+tgp+" in "+ld+" levels. That's a total growth of "+gpd+"!");
