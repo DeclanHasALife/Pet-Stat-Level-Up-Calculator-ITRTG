@@ -1,0 +1,10 @@
+# Pet-Stat-Level-Up-Calculator-ITRTG
+Calculator for how much stat points your pet will have at a certain level based on current growth.
+As i learn more about javascript there will probably be more updates/different features i add so it might not end up being just a Pet stats calculator but it is for now.
+Also theres parts of version 1.0 where you have to edit the code a little bit but i'll be explained to you when looking at 1.0
+
+Theres 2 different ways you can use this code/script/whatever that i know of.
+Way 1: Copy all the code and open inspect element, (Ctrl+Shift+I) click console in the top then paste the code into the bottom and hit
+enter, it  should progress from there.
+
+Way 2: Copy the code and go to this website (https://www.afterhoursprogramming.com/services/javascript-notepad/) paste it into the "Your Input" section then click "test code", should progress from there.
